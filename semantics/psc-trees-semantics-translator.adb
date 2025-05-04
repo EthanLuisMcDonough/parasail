@@ -3330,7 +3330,7 @@ package body PSC.Trees.Semantics.Translator is
          declare
             Op_Tree : Tree'Class renames Tree_Ptr_Of (Op).all;
          begin
-            if Op_Tree in Trees.Param_Decl.Tree'Class then
+            if Op_Tree in Trees.Param_Decl.Tree then
                declare
                   Param_Tree : constant Trees.Param_Decl.Tree :=
                     Trees.Param_Decl.Tree (Op_Tree);
